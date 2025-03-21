@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Section -->
+    <div class="content">
+        <header>
+            <h1>My Projects</h1>
+            <p>Here are some of the projects I've worked on.</p>
+        </header>
+
+        <section class="projects">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A short description of the project. Explains what it does and how it was built.</p>
+                <a href="#">View Project</a>
+            </div>
+
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A short description of the project. Details about its features and purpose.</p>
+                <a href="#">View Project</a>
+            </div>
+
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>A short description of the project. Discusses the technologies used.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Menu (Vertical Sidebar) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    background: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+nav ul li {
+    display: block;
+    border-bottom: 1px solid #555;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background: #007BFF;
+}
+
+/* Main Content */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project a:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    margin-left: 220px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="content">
+        <header>
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me via the form below or through my social media.</p>
+        </header>
+
+        <section class="contact">
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <h3>Or connect with me on:</h3>
+            <ul class="social-links">
+                <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
+                <li><a href="mailto:your.email@example.com">Email Me</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Menu (Vertical Sidebar) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    background: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+nav ul li {
+    display: block;
+    border-bottom: 1px solid #555;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background: #007BFF;
+}
+
+/* Main Content */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact form input, 
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #0056b3;
+}
+
+/* Social Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;s
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-left: 220px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+s
